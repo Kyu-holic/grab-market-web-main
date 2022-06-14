@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
 html,
 body,
 #root,
@@ -24,4 +30,18 @@ body,
 #footer {
   height: 200px;
   background-color: rgb(230, 230, 230);
+}
+
+#header-area {
+  width: 1024px;
+  height: 100%;
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-area img {
+  width: 128px;
+  height: 36px;
 }
