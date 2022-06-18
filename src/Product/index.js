@@ -9,11 +9,10 @@ function ProductPage() {
   const [product, setProduct] = useState(null);
   useEffect(function () {
     axios
-      .get(
-        `https://e55d7116-15b8-42e5-9df1-d6479d6af959.mock.pstmn.io/products/${id}`
-      )
+      .get(`http://localhost:8080/products/${id}`)
       .then(function (result) {
-        setProduct(result.data);
+        //server.js에서 key 값으로 product가 들어가 있기 때문에 product에 접근을 해야하므로 result.data.product로 접근
+        setProduct(result.data.product);
       })
       .catch(function (error) {
         console.error("에러 발생:", error);
