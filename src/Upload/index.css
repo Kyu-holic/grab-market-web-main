@@ -1,4 +1,4 @@
-#upload-container{
+#upload-container {
   padding-top: 36px;
 }
 
@@ -24,13 +24,13 @@
   color: rgb(195, 194, 204);
 }
 
-.upload-name{
-    width: 250px;
+.upload-name {
+  width: 250px;
 }
 
-.upload-label{
-    font-size: 16px;
-    width: 80px;
+.upload-label {
+  font-size: 16px;
+  width: 80px;
 }
 
 #product-description {
@@ -41,6 +41,14 @@
   float: right;
   background-color: rgb(30, 120, 255);
   color: #fff;
-  border:none;
+  border: none;
   margin-top: 16px;
+}
+
+#upload-img {
+  width: 200px;
+  height: 200px;
+  margin-left: 16px;
+  /* //가로 세로 비율을 맞추면서 이미지 크기 설정하는 속성 object-fit: :contain; */
+  object-fit: contain;
 }
